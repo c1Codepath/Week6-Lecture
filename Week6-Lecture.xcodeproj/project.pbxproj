@@ -14,6 +14,14 @@
 		A061AAC61CD9393800192052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A061AAC41CD9393800192052 /* LaunchScreen.storyboard */; };
 		A061AAD11CD9393800192052 /* Week6_LectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A061AAD01CD9393800192052 /* Week6_LectureTests.swift */; };
 		A061AADC1CD9393800192052 /* Week6_LectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A061AADB1CD9393800192052 /* Week6_LectureUITests.swift */; };
+		A061AAEA1CD939A400192052 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A061AAE91CD939A400192052 /* BlueViewController.swift */; };
+		A061AAEC1CD939AC00192052 /* GrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A061AAEB1CD939AC00192052 /* GrayViewController.swift */; };
+		A061AAEF1CD93AE100192052 /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A061AAED1CD93AE100192052 /* BaseTransition.swift */; };
+		A061AAF01CD93AE100192052 /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A061AAEE1CD93AE100192052 /* FadeTransition.swift */; };
+		A061AAF21CD93F8100192052 /* LightboxTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A061AAF11CD93F8100192052 /* LightboxTransition.swift */; };
+		A061AAF41CD9461E00192052 /* ManyPicturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A061AAF31CD9461E00192052 /* ManyPicturesViewController.swift */; };
+		A061AAF61CD9467600192052 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A061AAF51CD9467600192052 /* PictureViewController.swift */; };
+		A061AAF81CD949E500192052 /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A061AAF71CD949E500192052 /* ImageTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		A061AAD71CD9393800192052 /* Week6-LectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Week6-LectureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A061AADB1CD9393800192052 /* Week6_LectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Week6_LectureUITests.swift; sourceTree = "<group>"; };
 		A061AADD1CD9393800192052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A061AAE91CD939A400192052 /* BlueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		A061AAEB1CD939AC00192052 /* GrayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GrayViewController.swift; sourceTree = "<group>"; };
+		A061AAED1CD93AE100192052 /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		A061AAEE1CD93AE100192052 /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
+		A061AAF11CD93F8100192052 /* LightboxTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightboxTransition.swift; sourceTree = "<group>"; };
+		A061AAF31CD9461E00192052 /* ManyPicturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManyPicturesViewController.swift; sourceTree = "<group>"; };
+		A061AAF51CD9467600192052 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		A061AAF71CD949E500192052 /* ImageTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +113,17 @@
 		A061AABA1CD9393800192052 /* Week6-Lecture */ = {
 			isa = PBXGroup;
 			children = (
+				A061AAED1CD93AE100192052 /* BaseTransition.swift */,
+				A061AAEE1CD93AE100192052 /* FadeTransition.swift */,
+				A061AAF11CD93F8100192052 /* LightboxTransition.swift */,
 				A061AABB1CD9393800192052 /* AppDelegate.swift */,
 				A061AABD1CD9393800192052 /* ViewController.swift */,
 				A061AABF1CD9393800192052 /* Main.storyboard */,
+				A061AAF51CD9467600192052 /* PictureViewController.swift */,
+				A061AAF31CD9461E00192052 /* ManyPicturesViewController.swift */,
+				A061AAF71CD949E500192052 /* ImageTransition.swift */,
+				A061AAEB1CD939AC00192052 /* GrayViewController.swift */,
+				A061AAE91CD939A400192052 /* BlueViewController.swift */,
 				A061AAC21CD9393800192052 /* Assets.xcassets */,
 				A061AAC41CD9393800192052 /* LaunchScreen.storyboard */,
 				A061AAC71CD9393800192052 /* Info.plist */,
@@ -257,6 +281,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A061AABE1CD9393800192052 /* ViewController.swift in Sources */,
+				A061AAF21CD93F8100192052 /* LightboxTransition.swift in Sources */,
+				A061AAEF1CD93AE100192052 /* BaseTransition.swift in Sources */,
+				A061AAEC1CD939AC00192052 /* GrayViewController.swift in Sources */,
+				A061AAF41CD9461E00192052 /* ManyPicturesViewController.swift in Sources */,
+				A061AAEA1CD939A400192052 /* BlueViewController.swift in Sources */,
+				A061AAF81CD949E500192052 /* ImageTransition.swift in Sources */,
+				A061AAF01CD93AE100192052 /* FadeTransition.swift in Sources */,
+				A061AAF61CD9467600192052 /* PictureViewController.swift in Sources */,
 				A061AABC1CD9393800192052 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +437,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Capital-One.Week6-Lecture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -416,6 +449,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Capital-One.Week6-Lecture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

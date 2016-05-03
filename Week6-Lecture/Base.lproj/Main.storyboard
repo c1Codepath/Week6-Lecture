@@ -1,25 +1,223 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Q1P-TL-PPd">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Blue View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
+                <viewController id="BYZ-38-t0r" customClass="BlueViewController" customModule="Week6_Lecture" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JBK-VO-7u3">
+                                <rect key="frame" x="96" y="65" width="129" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="lF2-XR-RF2" kind="modal" identifier="graySegue" id="bIe-Ss-NTd"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="B9w-CH-Fmk">
+                                <rect key="frame" x="96" y="153" width="129" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.61581796407699585" blue="0.8447917103767395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="UE4-zo-31L" appends="YES" id="DD6-Md-dKn"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="B9w-CH-Fmk" id="t3M-U6-yDb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="UE4-zo-31L">
+                    <connections>
+                        <action selector="onPinch:" destination="BYZ-38-t0r" id="epO-zL-Xnl"/>
+                    </connections>
+                </pinchGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="81" y="425"/>
+        </scene>
+        <!--Many Pictures View Controller-->
+        <scene sceneID="eYg-Jr-kMv">
+            <objects>
+                <viewController id="Q1P-TL-PPd" customClass="ManyPicturesViewController" customModule="Week6_Lecture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D1d-hR-uaL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="image1" id="NII-4f-k8l">
+                                <rect key="frame" x="0.0" y="26" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="q9g-ZW-ZHX" appends="YES" id="K7e-fL-IPe"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="image2" id="7je-94-rKV">
+                                <rect key="frame" x="170" y="368" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="1H9-81-Vcw" appends="YES" id="Icg-P8-HH2"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="image3" id="MBW-pO-ZN4">
+                                <rect key="frame" x="0.0" y="368" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="mKh-QN-iZH" appends="YES" id="DOX-iJ-LYW"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="image4" id="Cv5-lK-bJV">
+                                <rect key="frame" x="170" y="194" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="452-qc-Vkg" appends="YES" id="nqi-Dz-2rW"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="image5" id="3Je-za-Yre">
+                                <rect key="frame" x="0.0" y="194" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xqs-Ta-Cu4" appends="YES" id="KwE-2j-S6S"/>
+                                </connections>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="image6" id="f0x-gN-Xia">
+                                <rect key="frame" x="170" y="26" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xmL-oU-RVP" appends="YES" id="6Gh-Yv-SeZ"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="pec-Hp-6nc" kind="modal" identifier="pictureSegue" id="chz-Ms-Gfr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kbU-pS-EuH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="q9g-ZW-ZHX">
+                    <connections>
+                        <action selector="onTap:" destination="Q1P-TL-PPd" id="w8K-Fq-aYE"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="xmL-oU-RVP">
+                    <connections>
+                        <action selector="onTap:" destination="Q1P-TL-PPd" id="EzC-bt-Add"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="452-qc-Vkg">
+                    <connections>
+                        <action selector="onTap:" destination="Q1P-TL-PPd" id="ygy-VP-bde"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="xqs-Ta-Cu4">
+                    <connections>
+                        <action selector="onTap:" destination="Q1P-TL-PPd" id="WqJ-UF-Ppi"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="1H9-81-Vcw">
+                    <connections>
+                        <action selector="onTap:" destination="Q1P-TL-PPd" id="mvv-H1-njC"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="mKh-QN-iZH">
+                    <connections>
+                        <action selector="onTap:" destination="Q1P-TL-PPd" id="7eG-Dt-aEN"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="81" y="1081"/>
+        </scene>
+        <!--Picture View Controller-->
+        <scene sceneID="fpS-MJ-okQ">
+            <objects>
+                <viewController id="pec-Hp-6nc" customClass="PictureViewController" customModule="Week6_Lecture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DJP-wh-It2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2ja-LC-BlQ">
+                                <rect key="frame" x="137" y="444" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="didPressButton:" destination="pec-Hp-6nc" eventType="touchUpInside" id="E4f-CP-sqK"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="image2" id="goW-8d-Dm4">
+                                <rect key="frame" x="0.0" y="27" width="320" height="320"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="goW-8d-Dm4" id="QhF-gU-bYv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IvW-mf-GJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="484" y="1081"/>
+        </scene>
+        <!--Gray View Controller-->
+        <scene sceneID="oX7-Fs-RZb">
+            <objects>
+                <viewController id="lF2-XR-RF2" customClass="GrayViewController" customModule="Week6_Lecture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RkM-by-ekf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="P2g-Gn-pPw">
+                                <rect key="frame" x="96" y="453" width="129" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="didPressButton:" destination="lF2-XR-RF2" eventType="touchUpInside" id="1jN-OW-o90"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hwb-Px-Mdm">
+                                <rect key="frame" x="96" y="396" width="129" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56028949553122998" green="0.5605806999874563" blue="0.57841883296460184" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="Hwb-Px-Mdm" id="gyx-3c-seh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AaX-c7-J7m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="484" y="425"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="image1" width="750" height="750"/>
+        <image name="image2" width="750" height="750"/>
+        <image name="image3" width="750" height="750"/>
+        <image name="image4" width="750" height="750"/>
+        <image name="image5" width="750" height="750"/>
+        <image name="image6" width="750" height="750"/>
+    </resources>
 </document>
